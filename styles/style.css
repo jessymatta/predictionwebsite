@@ -5,7 +5,7 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
-/* dog as a background image of the page */
+/* A dog as a background image of the page */
 .background-image {
     background: linear-gradient(63.71deg, rgba(0, 0, 0, 0.9) 3.36%, rgba(0, 0, 0, 0) 86.41%), linear-gradient(243.59deg, #1A1F91 10.24%, rgba(36, 42, 192, 0) 100%), url("../images/img1.jpg");
     background-size: cover;
@@ -22,9 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: left;
-    /* align-self: center;
-    justify-self: center; */
-    margin-top: 10vh;
+    margin-top: 6vh;
     width: 35%;
     margin-left: 32.5vw;
     margin-right: 32.5vw;
@@ -71,10 +69,46 @@
     font-weight: 700;
     color:white;
     text-align: center;
-    margin-top: 13vh;
+    margin-top: 10vh;
     width:45%;
     display: flex;
     margin-left: 30vw;
     margin-right: 32.5vw;
 
+}
+
+/* Section 3 : results display */
+.results{
+    border: 5px solid purple;
+    margin-top: 11vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.results p{
+color: #1AEA23;
+font-weight: 700;
+font-size: 1.8rem;
+text-align: center;
+margin-bottom: 10px;
+
+}
+
+.result-display{
+    border: 5px solid yellow;
+
+    
+}
+
+.circular-shape{
+    border: 5px solid white;
+    /* padding:2rem;
+    margin:5rem; */
+    border-radius: 1000px;
+    width: 200px;
+    height: 200px;
 }
