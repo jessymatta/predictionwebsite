@@ -5,7 +5,7 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
-
+/* dog as a background image of the page */
 .background-image {
     background: linear-gradient(63.71deg, rgba(0, 0, 0, 0.9) 3.36%, rgba(0, 0, 0, 0) 86.41%), linear-gradient(243.59deg, #1A1F91 10.24%, rgba(36, 42, 192, 0) 100%), url("../images/img1.jpg");
     background-size: cover;
@@ -14,3 +14,53 @@
     position: relative;
 }
 
+.input-name {
+    border: 5px solid red;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* align-self: center;
+    justify-self: center; */
+    margin-top: 13vh;
+    width: 35%;
+    margin-left: 32.5vw;
+    margin-right: 32.5vw;
+    padding: 22px
+}
+
+/* Section 1 styling: name input and a submit button */
+.input-name label {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.input-name input {
+    width: 31vw;
+    height: 6.6vh;
+    border-radius: 40px;
+    text-align: left;
+    border: 5px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    text-indent: 10px;
+}
+
+.btn-green {
+    width: 16vw;
+    height: 6vh;
+    padding: 1rem;
+    background: #1AEA23;
+    border-radius: 9999px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    align-self: center;
+    border: none;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
