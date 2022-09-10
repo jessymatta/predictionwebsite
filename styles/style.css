@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.background-image {
+    background: linear-gradient(63.71deg, rgba(0, 0, 0, 0.9) 3.36%, rgba(0, 0, 0, 0) 86.41%), linear-gradient(243.59deg, #1A1F91 10.24%, rgba(36, 42, 192, 0) 100%), url("../images/img1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
