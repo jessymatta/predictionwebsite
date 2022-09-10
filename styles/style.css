@@ -120,9 +120,9 @@
     display: flex;
     justify-items: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .circular-shape p{
     color: white;
-
 }

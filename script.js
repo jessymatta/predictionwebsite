@@ -13,7 +13,7 @@ function fetchDogPics() {
     });
 }
 
-//----------------------------------------------------------------------------------------------------
+//-----------------------------------------  Utilities -----------------------------------------------------------
 // Function that gets gender prediction according to a certain name and displays it on the webpage
 function fetchGenderPredic(name_input) {
     fetch(`https://api.genderize.io?name=${name_input}`).then((data) => {
@@ -33,6 +33,19 @@ function fetchAgePredic(name_input) {
         document.getElementById("age-pred").innerHTML = completedata.age;
     });
 }
+
+
+// Function that gets 2 nationality predictions according to a certain name and displays them on the webpage
+function fetchNationPredic(name_input) {
+    fetch(`https://api.nationalize.io/?name=${name_input}`).then((data) => {
+        return data.json();
+    }).then((completedata) => {
+        document.getElementById("nation-pred-1").innerHTML = JSON.stringify(completedata.country[0].country_id);
+        document.getElementById("nation-pred-2").innerHTML = JSON.stringify(completedata.country[1].country_id);
+
+
+    });
+}
 //----------------------------------------------------------------------------------------------------
 
 // A function that returns the inputed name
@@ -44,6 +57,7 @@ function getName() {
         console.log("NAMEEEEEE " + name_to_fetch);
         fetchGenderPredic(name_to_fetch);
         fetchAgePredic(name_to_fetch);
+        fetchNationPredic(name_to_fetch);
 
 
 
