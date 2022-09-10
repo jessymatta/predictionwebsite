@@ -9,13 +9,12 @@
 </head>
 
 <body id="background-image">
-    <img id="dogimgtest">
 
     <!-- Section 1: Name label with input and a button to submit the name -->
     <div class="input-name">
         <label>Name</label>
-        <input type="text" name="name" placeholder="Enter your name">
-        <button class="btn-green">Submit</button>
+        <input id="user_name" type="text" placeholder="Enter your name">
+        <button id="submit-btn" class="btn-green">Submit</button>
     </div>
 
     <!-- Section 2 : Small Description -->
@@ -30,13 +29,19 @@
 
         <div class="result-display">
             <p>Age</p>
-            <div class="circular-shape"></div>
+            <div class="circular-shape">
+                <p id="age-pred"></p>
+
+
+            </div>
 
         </div>
 
         <div class="result-display">
             <p>Gender</p>
-            <div class="circular-shape"></div>
+            <div class="circular-shape">
+                <p id="gender-pred"></p>
+            </div>
 
         </div>
 

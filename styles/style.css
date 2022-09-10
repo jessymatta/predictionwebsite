@@ -44,6 +44,9 @@
     border: 5px solid white;
     background-color: rgba(0, 0, 0, 0);
     text-indent: 10px;
+    color:white;
+    font-weight: 300;
+    font-size: large;
 }
 
 .btn-green {
@@ -61,6 +64,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
+.btn-green:hover{
+    opacity: 0.5;
 }
 
 /* Section 2: Description */
@@ -101,16 +108,21 @@
 }
 
 /* .result-display{
-    border: 5px solid yellow;
-
-    
+    border: 5px solid yellow
 } */
 
 .circular-shape {
     border: 5px solid white;
-    /* padding:2rem;
-    margin:5rem; */
+    padding:3.5rem;
     border-radius: 1000px;
     width: 200px;
     height: 200px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.circular-shape p{
+    color: white;
+
 }
