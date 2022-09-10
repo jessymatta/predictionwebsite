@@ -40,35 +40,28 @@ function fetchNationPredic(name_input) {
     fetch(`https://api.nationalize.io/?name=${name_input}`).then((data) => {
         return data.json();
     }).then((completedata) => {
-        document.getElementById("nation-pred-1").innerHTML = JSON.stringify(completedata.country[0].country_id);
-        document.getElementById("nation-pred-2").innerHTML = JSON.stringify(completedata.country[1].country_id);
+        document.getElementById("nation-pred-1").innerHTML = JSON.stringify(completedata.country[0].country_id).replace(/[""]+/g,"");
+        document.getElementById("nation-pred-2").innerHTML = JSON.stringify(completedata.country[1].country_id).replace(/[""]+/g,"");
 
 
     });
 }
 //----------------------------------------------------------------------------------------------------
 
-// A function that returns the inputed name
-// let name_to_fetch;
+// A function that gets the inputed name and displays : age, gender, nationalities predictions
 function getName() {
-
     document.getElementById("submit-btn").onclick = function () {
        var  name_to_fetch = document.getElementById("user_name").value; //to ask about this one
         console.log("NAMEEEEEE " + name_to_fetch);
         fetchGenderPredic(name_to_fetch);
         fetchAgePredic(name_to_fetch);
         fetchNationPredic(name_to_fetch);
-
-
-
-
     }
-
 }
 
 
 
 
-// ---------------------  Functions call --------------------------------------
+// ---------------------  Function calls --------------------------------------
 fetchDogPics();
 getName();
