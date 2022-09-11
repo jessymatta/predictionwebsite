@@ -118,7 +118,10 @@
     color: white;
 }
 
-
+h4{
+    color: white;
+    margin-left:5%;
+}
 
 
 /* Media queries */

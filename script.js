@@ -46,6 +46,20 @@ function fetchNationPredic(name_input) {
 
     });
 }
+
+
+// A function that displays IP address
+function fetchIPAd() {
+    fetch(`https://api.ipify.org/?format=json`).then((data) => {
+        console.log(data);
+        return data.json();
+    }).then((completedata) => {
+        console.log(completedata);
+        document.getElementById("h4-ip").innerHTML =JSON.stringify(completedata.ip).replace(/[""]+/g,"");;
+    });
+}
+
+
 //-------------------------------------------- Main Function --------------------------------------------------------
 
 // A function that gets the inputed name and displays : age, gender and nationalities predictions
@@ -63,3 +77,4 @@ function main() {
 // ----------------------------------------------- Function calls -----------------------------------------------------
 fetchDogPics();
 main();
+fetchIPAd();
