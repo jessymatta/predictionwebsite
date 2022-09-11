@@ -1,6 +1,4 @@
-
 const dog_img = document.getElementById("background-image");
-
 
 
 // A function that retrieves dog pics from an api and changes the background image of the page
@@ -67,14 +65,8 @@ function boredBtn() {
     document.getElementById("bored-btn").onclick = function () {
         axios.get("http://www.boredapi.com/api/activity")
             .then(function (response) {
-                console.log(response.data);
-                console.log(response.status);
-                console.log(response.statusText);
-                console.log(response.headers);
-                console.log(response.config);
                 return response.data;
             }).then((completedata) => {
-                console.log(completedata.activity);
                 document.getElementById("bored-display").innerHTML = completedata.activity;
             });
 

@@ -57,7 +57,9 @@
     cursor: pointer;
 }
 
-.btn-green:hover {
+
+.btn-green:active {
+    background-color: blue;
     opacity: 0.5;
 }
 
@@ -125,17 +127,18 @@ h4 {
 }
 
 
-.border-container {
-    border: 5px solid red;
+.bored-container {
     color: white;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
 }
-.border-container p{
+
+.bored-container p {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-left:10%;
+    margin-left: 10%;
     margin-top: 1.5%;
 }
 
@@ -174,6 +177,19 @@ h4 {
         margin-top: 10%;
     }
 
+    .bored-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bored-container button {
+        width: 90%;
+        height: auto;
+        align-self: center;
+    }
+
+
 }
 
 /* For small Devices, Tablets */
@@ -198,5 +214,13 @@ h4 {
         align-self: left;
     }
 
+    .bored-container p {
+        width: 50%;
+    }
+
+    .bored-container button {
+        width: 30%;
+        height: auto;
+    }
 
 }
