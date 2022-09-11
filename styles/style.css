@@ -195,6 +195,14 @@ h4 {
         align-self: center;
     }
 
+    .signin-container {
+        width: 100vw;
+    }
+
+    .signin-container button {
+        width: 100%;
+    }
+
 
 }
 

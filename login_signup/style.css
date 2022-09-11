@@ -73,3 +73,47 @@ a{
     margin-top:15px;
     text-align: center;
 }
+
+
+
+
+
+   /* Media queries */
+
+/* For mobile devices */
+@media only screen and (min-width: 250px) and (max-width: 480px) {
+
+
+    .sign-in,.sign-up{
+        width:100vw;
+        padding: 3%;
+    } 
+
+    .sign-in button{
+        width: 100%;
+    }
+    .sign-up button{
+        width: 100%;
+    }
+
+}
+
+
+
+/* For small Devices, Tablets */
+@media only screen and (min-width : 480px) and (max-width :1000px) {
+    
+    .sign-in,.sign-up{
+        width:75vw;
+        padding: 3%;
+    } 
+
+    .sign-in button{
+        width: 100%;
+    }
+    .sign-up button{
+        width: 100%;
+    }
+
+
+}
