@@ -48,7 +48,7 @@ function fetchNationPredic(name_input) {
     });
 }
 
-// https://api.ipify.org/?format=json
+
 // A function that displays IP address
 function fetchIPAd() {
     fetch("https://api.ipify.org/?format=json").then((data) => {
@@ -62,31 +62,21 @@ function fetchIPAd() {
 
 
 
-// A function 
-// function boredBtn() {
-//     document.getElementById("bored-btn").onclick = function () {
-
-
-//         fetch(`https://www.boredapi.com/api/activity`).then((data) => {
-//         console.log(data);
-//         return data.json();
-//     }).then((completedata) => {
-//         console.log(completedata);
-//         document.getElementById("bored-display").innerHTML =JSON.stringify(completedata.ip);
-//     })
-//     }
-// }
-
+//A function that displays random tasks to do when bored-btn is clicked
 function boredBtn() {
     document.getElementById("bored-btn").onclick = function () {
-        axios.get(`https://www.boredapi.com/api/activity`).then((data) => {
-            console.log(data);
-            return data.json();
-        }).then((completedata) => {
-            console.log(completedata);
-            document.getElementById("bored-display").innerHTML = JSON.stringify(completedata.activity);
-        })
-
+        axios.get("http://www.boredapi.com/api/activity")
+            .then(function (response) {
+                console.log(response.data);
+                console.log(response.status);
+                console.log(response.statusText);
+                console.log(response.headers);
+                console.log(response.config);
+                return response.data;
+            }).then((completedata) => {
+                console.log(completedata.activity);
+                document.getElementById("bored-display").innerHTML = completedata.activity;
+            });
 
     }
 }
@@ -109,4 +99,8 @@ function main() {
 fetchDogPics();
 main();
 fetchIPAd();
-// boredBtn();
+boredBtn();
+
+
+
+
