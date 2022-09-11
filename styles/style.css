@@ -57,7 +57,9 @@
     cursor: pointer;
 }
 
-.btn-green:hover {
+
+.btn-green:active {
+    background-color: blue;
     opacity: 0.5;
 }
 
@@ -118,11 +120,27 @@
     color: white;
 }
 
-h4{
+h4 {
     color: white;
-    margin-left:5%;
+    margin-left: 5%;
+    margin-top: 0%;
 }
 
+
+.bored-container {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.bored-container p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 10%;
+    margin-top: 1.5%;
+}
 
 /* Media queries */
 
@@ -159,27 +177,50 @@ h4{
         margin-top: 10%;
     }
 
+    .bored-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bored-container button {
+        width: 90%;
+        height: auto;
+        align-self: center;
+    }
+
+
 }
 
 /* For small Devices, Tablets */
-    @media only screen and (min-width : 540px) and (max-width :920px){
-        .input-name{
-            margin-left:20%;
-            margin-right: 20%;
-            width: 60%;
-            align-items: left;
-
-        }
-
-        .input-name input{
-            width:100%;
-        }
-        .input-name button{
-            width:40%;
-        }
-        .input-name label{
-            align-self: left;
-        }
-
+@media only screen and (min-width : 540px) and (max-width :920px) {
+    .input-name {
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+        align-items: left;
 
     }
+
+    .input-name input {
+        width: 100%;
+    }
+
+    .input-name button {
+        width: 40%;
+    }
+
+    .input-name label {
+        align-self: left;
+    }
+
+    .bored-container p {
+        width: 50%;
+    }
+
+    .bored-container button {
+        width: 30%;
+        height: auto;
+    }
+
+}
