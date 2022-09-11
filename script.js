@@ -13,8 +13,8 @@ function fetchDogPics() {
     });
 }
 
-//-----------------------------------------  Utilities -----------------------------------------------------------
-// Function that gets gender prediction according to a certain name and displays it on the webpage
+
+// A function that gets gender prediction according to a certain name and displays it on the webpage
 function fetchGenderPredic(name_input) {
     fetch(`https://api.genderize.io?name=${name_input}`).then((data) => {
         return data.json();
@@ -25,7 +25,7 @@ function fetchGenderPredic(name_input) {
 }
 
 
-//Function that gets age prediction according to a certain name and displays it on the webpage
+//A function that gets age prediction according to a certain name and displays it on the webpage
 function fetchAgePredic(name_input) {
     fetch(`https://api.agify.io/?name=${name_input}`).then((data) => {
         return data.json();
@@ -35,7 +35,7 @@ function fetchAgePredic(name_input) {
 }
 
 
-// Function that gets 2 nationality predictions according to a certain name and displays them on the webpage
+//A function that gets 2 nationality predictions according to a certain name and displays them on the webpage
 function fetchNationPredic(name_input) {
     fetch(`https://api.nationalize.io/?name=${name_input}`).then((data) => {
         return data.json();
@@ -46,10 +46,10 @@ function fetchNationPredic(name_input) {
 
     });
 }
-//----------------------------------------------------------------------------------------------------
+//-------------------------------------------- Main Function --------------------------------------------------------
 
-// A function that gets the inputed name and displays : age, gender, nationalities predictions
-function getName() {
+// A function that gets the inputed name and displays : age, gender and nationalities predictions
+function main() {
     document.getElementById("submit-btn").onclick = function () {
        var  name_to_fetch = document.getElementById("user_name").value; //to ask about this one
         console.log("NAMEEEEEE " + name_to_fetch);
@@ -62,6 +62,6 @@ function getName() {
 
 
 
-// ---------------------  Function calls --------------------------------------
+// ---------------------  Function calls ------------------------------------------------------------------------------
 fetchDogPics();
-getName();
+main();

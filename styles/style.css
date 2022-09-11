@@ -5,16 +5,6 @@
     font-family: 'Noto Sans', sans-serif;
 }
 
-/* A dog as a background image of the page */
-/* .background-image { */
-    /* background: linear-gradient(63.71deg, rgba(0, 0, 0, 0.9) 3.36%, rgba(0, 0, 0, 0) 86.41%), linear-gradient(243.59deg, #1A1F91 10.24%, rgba(36, 42, 192, 0) 100%), url("../images/img1.jpg"); */
-    /* background: linear-gradient(63.71deg, rgba(0, 0, 0, 0.9) 3.36%, rgba(0, 0, 0, 0) 86.41%), linear-gradient(243.59deg, #1A1F91 10.24%, rgba(36, 42, 192, 0) 100%), url("../images/img1.jpg"); */
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-} */
-
 .input-name {
     /* border: 5px solid blue; */
     color: white;
