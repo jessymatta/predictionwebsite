@@ -31,7 +31,7 @@ function signIn(e) {
     let exist = formData.length && 
     JSON.parse(localStorage.getItem('formData')).some(data => data.email.toLowerCase() == email && data.pwd.toLowerCase() == pwd);
     if(!exist){
-        document.getElementById('acc-log').innerHTML ="You already signed up";
+        document.getElementById('acc-log').innerHTML ="Incorrect login credentials.";
     }
     else{
         location.href = "/";

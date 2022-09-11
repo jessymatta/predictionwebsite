@@ -20,6 +20,12 @@
     padding: 22px
 }
 
+.signin-container a {
+    color: white;
+    text-decoration: none;
+
+}
+
 /* Section 1 styling: name input and a submit button */
 .input-name label {
     margin-left: 10px;
