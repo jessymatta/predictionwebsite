@@ -40,8 +40,8 @@ function fetchNationPredic(name_input) {
     fetch(`https://api.nationalize.io/?name=${name_input}`).then((data) => {
         return data.json();
     }).then((completedata) => {
-        document.getElementById("nation-pred-1").innerHTML = JSON.stringify(completedata.country[0].country_id).replace(/[""]+/g,"");
-        document.getElementById("nation-pred-2").innerHTML = JSON.stringify(completedata.country[1].country_id).replace(/[""]+/g,"");
+        document.getElementById("nation-pred-1").innerHTML = JSON.stringify(completedata.country[0].country_id).replace(/[""]+/g, "");
+        document.getElementById("nation-pred-2").innerHTML = JSON.stringify(completedata.country[1].country_id).replace(/[""]+/g, "");
 
 
     });
@@ -55,8 +55,39 @@ function fetchIPAd() {
         return data.json();
     }).then((completedata) => {
         console.log(completedata);
-        document.getElementById("h4-ip").innerHTML =JSON.stringify(completedata.ip).replace(/[""]+/g,"");;
+        document.getElementById("h4-ip").innerHTML = JSON.stringify(completedata.ip).replace(/[""]+/g, "");
     });
+}
+
+
+
+// A function 
+// function boredBtn() {
+//     document.getElementById("bored-btn").onclick = function () {
+
+
+//         fetch(`https://www.boredapi.com/api/activity`).then((data) => {
+//         console.log(data);
+//         return data.json();
+//     }).then((completedata) => {
+//         console.log(completedata);
+//         document.getElementById("bored-display").innerHTML =JSON.stringify(completedata.ip);
+//     })
+//     }
+// }
+
+function boredBtn() {
+    document.getElementById("bored-btn").onclick = function () {
+        axios.get(`https://www.boredapi.com/api/activity`).then((data) => {
+            console.log(data);
+            return data.json();
+        }).then((completedata) => {
+            console.log(completedata);
+            document.getElementById("bored-display").innerHTML = JSON.stringify(completedata.activity);
+        })
+
+
+    }
 }
 
 
@@ -65,8 +96,7 @@ function fetchIPAd() {
 // A function that gets the inputed name and displays : age, gender and nationalities predictions
 function main() {
     document.getElementById("submit-btn").onclick = function () {
-       var  name_to_fetch = document.getElementById("user_name").value; //to ask about this one
-        console.log("NAMEEEEEE " + name_to_fetch);
+        var name_to_fetch = document.getElementById("user_name").value;
         fetchGenderPredic(name_to_fetch);
         fetchAgePredic(name_to_fetch);
         fetchNationPredic(name_to_fetch);
@@ -78,3 +108,4 @@ function main() {
 fetchDogPics();
 main();
 fetchIPAd();
+boredBtn();
