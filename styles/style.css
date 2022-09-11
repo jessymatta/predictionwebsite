@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.input-name {
+    /* border: 5px solid blue; */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 6vh;
+    width: 35%;
+    margin-left: 32.5vw;
+    margin-right: 32.5vw;
+    padding: 22px
+}
+
+/* Section 1 styling: name input and a submit button */
+.input-name label {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.input-name input {
+    width: 31vw;
+    height: 6.6vh;
+    border-radius: 40px;
+    text-align: left;
+    border: 5px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    text-indent: 10px;
+    color: white;
+    font-weight: 300;
+    font-size: large;
+}
+
+.btn-green {
+    width: 16vw;
+    height: 6vh;
+    padding: 1rem;
+    background: #1AEA23;
+    border-radius: 9999px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    align-self: center;
+    border: none;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-green:hover {
+    opacity: 0.5;
+}
+
+/* Section 2: Description */
+.description {
+    /* border: 5px solid red; */
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 10vh;
+    width: 45%;
+    display: flex;
+    margin-left: 30vw;
+    margin-right: 32.5vw;
+
+}
+
+/* Section 3 : results display */
+.results {
+    /* border: 5px solid purple; */
+    margin-top: 11vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.results p {
+    color: #1AEA23;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+/* .result-display{
+    border: 5px solid yellow
+} */
+
+.circular-shape {
+    border: 5px solid white;
+    padding: 3.5rem;
+    border-radius: 1000px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.circular-shape p {
+    color: white;
+}
+
+
+
+
+/* Media queries */
+
+/* For mobile devices */
+@media only screen and (min-width: 250px) and (max-width: 480px) {
+
+
+    .input-name {
+        width: 100%;
+        margin: 0;
+    }
+
+    .input-name input {
+        width: 100%;
+    }
+
+    .input-name button {
+        width: 50%;
+    }
+
+    .description {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        margin-top: 10%;
+    }
+
+    .results {
+        margin-top: 15%;
+    }
+
+    .result-display {
+        margin-top: 10%;
+    }
+
+}
+
+/* For small Devices, Tablets */
+    @media only screen and (min-width : 540px) and (max-width :920px){
+        .input-name{
+            margin-left:20%;
+            margin-right: 20%;
+            width: 60%;
+            align-items: left;
+
+        }
+
+        .input-name input{
+            width:100%;
+        }
+        .input-name button{
+            width:40%;
+        }
+        .input-name label{
+            align-self: left;
+        }
+
+
+    }
