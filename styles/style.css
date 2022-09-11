@@ -34,7 +34,7 @@
     border: 5px solid white;
     background-color: rgba(0, 0, 0, 0);
     text-indent: 10px;
-    color:white;
+    color: white;
     font-weight: 300;
     font-size: large;
 }
@@ -56,7 +56,8 @@
     align-items: center;
     cursor: pointer;
 }
-.btn-green:hover{
+
+.btn-green:hover {
     opacity: 0.5;
 }
 
@@ -103,7 +104,7 @@
 
 .circular-shape {
     border: 5px solid white;
-    padding:3.5rem;
+    padding: 3.5rem;
     border-radius: 1000px;
     width: 200px;
     height: 200px;
@@ -113,6 +114,50 @@
     flex-direction: column;
 }
 
-.circular-shape p{
+.circular-shape p {
     color: white;
+}
+
+
+
+
+/* Media queries */
+
+/* For mobile devices*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+
+    .input-name {
+        border: 5px solid green;
+        width: 100%;
+        margin: 0;
+    }
+
+    .input-name input {
+        width: 100%;
+    }
+
+    .input-name button {
+        width: 50%;
+    }
+
+    .description {
+        border: 5px solid red;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        margin-top: 10%;
+    }
+
+    .results {
+        border: 5px solid red;
+        margin-top: 15%;
+    }
+    .result-display{
+        border: 5px solid red;
+        margin-top: 10%;
+
+    }
+
 }
