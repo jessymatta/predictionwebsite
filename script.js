@@ -1,3 +1,4 @@
+
 const dog_img = document.getElementById("background-image");
 
 
@@ -47,10 +48,10 @@ function fetchNationPredic(name_input) {
     });
 }
 
-
+// https://api.ipify.org/?format=json
 // A function that displays IP address
 function fetchIPAd() {
-    fetch(`https://api.ipify.org/?format=json`).then((data) => {
+    fetch("https://api.ipify.org/?format=json").then((data) => {
         console.log(data);
         return data.json();
     }).then((completedata) => {
@@ -108,4 +109,4 @@ function main() {
 fetchDogPics();
 main();
 fetchIPAd();
-boredBtn();
+// boredBtn();
